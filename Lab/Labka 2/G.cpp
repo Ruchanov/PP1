@@ -16,3 +16,12 @@ int main(){
     cout << max;
     return 0;
 }
+int a[];
+fro(int i = 0;i< n;i++){
+    cin>>a[i];
+}
+fro(int i = 0;i<n;i++){
+    if(a[i]>max){
+        max = a[i];
+    }
+}
