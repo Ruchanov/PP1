@@ -21,9 +21,9 @@ int main(){
         for(int j = i + 1; j< m + n; j++){
             if(a2[j] < a[i]){
                 swap(a[i],a2[j]);
-                }
             }
         }
+    }
     for(int i=0; i<m+n; i++){
         cout<<a3[i]<<" ";
     }

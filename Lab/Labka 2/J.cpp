@@ -10,11 +10,11 @@ int main(){
    while(n!=0){
        cin>>k;
        while(k!=0){
-       if(k%10==0) x++; 
-      k/=10;
-       }
-       n--;
-   }
+           if(k%10==0) x++; 
+            k/=10;
+        }
+        n--;
+    }
    cout<<x;
     return 0;
 }

@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int n,m,k=0,l=0,min=INT_MAX;
+    int n,m,index=0,sum=0,min=INT_MAX;
     cin>>n>>m;
     int a[n][m];
     for(int i = 0; i < n; i++){
@@ -13,14 +13,14 @@ int main(){
     }
     for(int i = 0; i < n; i++){
         for(int j = 0; j< m; j++){
-            l += a[i][j]; 
+            sum += a[i][j]; 
         }
-        if(l<min){
-            min = l;
-            k=i+1; 
+        if(sum<min){
+            min = sum;
+            index = i+1; 
         }
-        l=0;
+        sum=0;
     }
-    cout<<k;
+    cout<<index;
     return 0;
 }
